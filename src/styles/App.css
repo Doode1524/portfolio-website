@@ -1,0 +1,8 @@
+.app {
+    display: flex;
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 400px;
+}
