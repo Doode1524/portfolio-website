@@ -51,7 +51,7 @@ export default function Videos() {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
+          <Avatar aria-label="React-Jack" className={classes.avatar}>
             R
           </Avatar>
         }
