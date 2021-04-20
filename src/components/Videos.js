@@ -10,7 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { blue, red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: blue[700],
   },
 }));
 
@@ -60,12 +60,13 @@ export default function Videos() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="React Blackjack"
+        subheader="April 2021"
       />
         <CardMedia
             // className={classes.media}
             component='iframe'
+            height="200"
             title='test'
             src='https://www.youtube.com/embed/NPp_AITIQ-M'
         /><CardMedia
@@ -73,8 +74,7 @@ export default function Videos() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+          A casino style BlackJack game built using a Rails API backend, React/Redux frontend, and a 3rd party API
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
