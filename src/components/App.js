@@ -1,13 +1,20 @@
 import React from 'react'
 import '../styles/App.css'
 import ButtonAppBar from './ButtonAppBar'
+import history from '../history'
+import Projects from './Projects'
+import { Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
     return (
-        <div>
-            <ButtonAppBar />
-            <h1>Hello Portfolio! My name is Joey 2 Slice</h1>
-        </div>
+        <Router history={history}>
+            <div>
+                <ButtonAppBar />
+                <Switch>
+                    <Route exact path='/projects' component={Projects}></Route>
+                </Switch>
+            </div>
+        </Router>
     )
 }
 
