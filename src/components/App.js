@@ -3,6 +3,7 @@ import '../styles/App.css'
 import ButtonAppBar from './ButtonAppBar'
 import history from '../history'
 import Projects from './Projects'
+import Contact from './Contact'
 import { Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
                 <ButtonAppBar />
                 <Switch>
                     <Route exact path='/projects' component={Projects}></Route>
+                    <Route exact path='/contact' component={Contact}></Route>
                 </Switch>
             </div>
         </Router>

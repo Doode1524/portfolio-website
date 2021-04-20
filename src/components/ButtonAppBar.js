@@ -33,9 +33,9 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             Joe Castronovo
           </Typography>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Contact</Button>
+          <Button color="inherit" href='/'>About</Button>
+          <Button color="inherit" href='/projects'>Projects</Button>
+          <Button color="inherit" href='/contact'>Contact</Button>
         </Toolbar>
       </AppBar>
     </div>
