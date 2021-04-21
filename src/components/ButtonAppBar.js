@@ -4,6 +4,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 // import IconButton from '@material-ui/core/IconButton';
 // import MenuIcon from '@material-ui/icons/Menu';
 
@@ -37,13 +40,16 @@ export default function ButtonAppBar() {
             Joe Castronovo
           </Typography>
           <Button color="inherit" href="/">
-            About
+              <PermIdentityIcon />
+                About
           </Button>
           <Button color="inherit" href="/projects">
-            Projects
+              <PlayCircleOutlineIcon />
+                Projects
           </Button>
           <Button color="inherit" href="/contact">
-            Contact
+              <MailOutlineIcon />
+                Contact
           </Button>
         </Toolbar>
       </AppBar>
