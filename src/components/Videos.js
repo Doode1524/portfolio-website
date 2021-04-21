@@ -60,16 +60,6 @@ const Videos = ({title, date, github, youtube, description}) => {
         <Paper className={classes.paper}>
           <Card className={classes.root}>
             <CardHeader
-              avatar={
-                <Avatar aria-label="React-Jack" className={classes.avatar}>
-                  R
-                </Avatar>
-              }
-              action={
-                <IconButton aria-label="settings">
-                  <MoreVertIcon />
-                </IconButton>
-              }
               title={title}
               subheader={date}
             />
